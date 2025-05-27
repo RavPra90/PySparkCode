@@ -95,6 +95,14 @@ category_analysis = df.groupBy("category") \
 category_analysis.show()
 
 # 3. REGIONAL PERFORMANCE ANALYSIS
+"""
+• Applied sum("amount") → Total sales per region
+• Used count("*") → Total number of sales transactions per region
+• Calculated countDistinct("salesperson") → Number of active salespeople per region
+• Applied avg("amount") → Average sale value per region
+• Used countDistinct("category") → Number of product categories available per region
+• Rounded average regional sale to 2 decimal places
+"""
 print("Regional Sales Distribution:")
 regional_performance = df.groupBy("region") \
     .agg(
@@ -110,6 +118,13 @@ regional_performance = df.groupBy("region") \
 regional_performance.show()
 
 # 4. TIME-BASED ANALYSIS
+"""
+• Applied sum("amount") → Daily revenue totals
+• Used count("*") → Number of transactions per day
+• Calculated countDistinct("salesperson") → Number of active salespeople per day
+• Created "avg_transaction_value" by dividing daily revenue by daily transactions
+• Rounded to 2 decimal places
+"""
 print("Daily Sales Trend:")
 daily_sales = df.groupBy("sale_date") \
     .agg(
@@ -124,6 +139,13 @@ daily_sales = df.groupBy("sale_date") \
 daily_sales.show()
 
 # 5. ADVANCED INSIGHTS - Window Functions for Ranking (TOP PERFORMERS BY CATEGORY)
+"""
+• Created window specification partitioned by "category"
+• Ordered by "amount" in descending order within each partition
+• Applied row_number() window function to rank sales within each category
+• Assigned rank 1 to highest sale in each category, rank 2 to second highest
+• Filtered to keep only top 2 sales per category using rank_in_category <= 2
+"""
 print("Advanced Analytics - Sales Ranking by Category:")
 from pyspark.sql.window import Window
 
@@ -139,6 +161,16 @@ top_sales_by_category = df.withColumn("rank_in_category",
 top_sales_by_category.show()
 
 # 6. PERFORMANCE INSIGHTS WITH CONDITIONAL LOGIC
+"""
+• Used when().otherwise() conditional logic for performance tiers:
+  - $1,200+: "Top Performer"
+  - $800+: "High Performer"
+  - $400+: "Medium Performer"
+  - Below $400: "Developing"
+• Calculated efficiency score using total_sales / total_transactions
+• Shows average revenue per transaction for each salesperson
+• Rounded to 2 decimal places
+"""
 print("\n6.6 Sales Performance Tier Classification:")
 performance_tiers = salesperson_performance \
     .withColumn("performance_tier",
