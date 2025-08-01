@@ -58,7 +58,7 @@ salesperson_performance = df.groupBy("salesperson") \
         sum("amount").alias("total_sales"),               # Total revenue per salesperson
         count("sale_id").alias("total_transactions"),     # Number of transactions per person
         avg("amount").alias("avg_sale_value"),            #Average deal size per person
-        max("amount").alias("highest_sale"),
+        max("amount").alias("highest_sale"),             #Highest single sale per person
         min("amount").alias("lowest_sale"),
         countDistinct("category").alias("categories_sold")
     ) \

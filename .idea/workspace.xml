@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fdccd16-fd77-4692-9a9a-19712d7f25a3" name="Changes" comment="Adding Rdd and Df">
-      <change afterPath="$PROJECT_DIR$/Dataframe/Df_Creation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataframe/df_where()_filter().py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataframe/df_withColumn().py" afterDir="false" />
+    <list default="true" id="1fdccd16-fd77-4692-9a9a-19712d7f25a3" name="Changes" comment="Basic Join example">
+      <change afterPath="$PROJECT_DIR$/Dataframe/List_operation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/RDD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataframe/Aggregation/Sales_data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataframe/Aggregation/Sales_data_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataframe/df_handling_null.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataframe/Data Quality/df_handling_null.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RavPra90&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RavPra90/PySparkCode.git&quot;,
+    &quot;accountId&quot;: &quot;1d23fe61-8390-4818-93b5-a4220c1b289b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -37,21 +53,46 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Billing_Scenario.executor": "Run",
+    "Python.Case_When.executor": "Run",
     "Python.Df_Creation.executor": "Run",
+    "Python.HandlingNestedJson.executor": "Run",
+    "Python.Incremental_daily_load.executor": "Run",
+    "Python.Lead_lag.executor": "Run",
+    "Python.List_operation.executor": "Run",
     "Python.RDD_Creation.executor": "Run",
+    "Python.Ranking_Sceanrios.executor": "Run",
+    "Python.Ranking_functions.executor": "Run",
+    "Python.Running_total_over_time.executor": "Run",
+    "Python.Running_total_over_time_using_missing_date_generation.executor": "Run",
+    "Python.Running_total_time_over_using_forward_fill.executor": "Run",
+    "Python.Sales_data_analysis.executor": "Run",
+    "Python.Scenario_1.executor": "Run",
+    "Python.Schema_mismatch.executor": "Run",
+    "Python.Skew_Data.executor": "Run",
+    "Python.basic_joins.executor": "Run",
+    "Python.conditional_aggregations.executor": "Run",
+    "Python.df_select().executor": "Run",
     "Python.df_where()_filter().executor": "Run",
     "Python.df_withColumn().executor": "Run",
+    "Python.find_top_performers.executor": "Run",
+    "Python.handling_dirty_data.executor": "Run",
+    "Python.handling_inconsistency.executor": "Run",
+    "Python.runnig_total.executor": "Run",
     "Python.test.executor": "Run",
     "Python.wordCount.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/PyCharmPythonProjects/PySparkCode",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "last_opened_file_path": "E:/PyCharmPythonProjects/PythonLearning",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PyCharmPythonProjects\PySparkCode\Dataframe\Window Function" />
+      <recent name="E:\PyCharmPythonProjects\PySparkCode\Dataframe\Data Quality" />
+      <recent name="E:\PyCharmPythonProjects\PySparkCode\Dataframe\Incremental Scenarios\SCD 1 " />
       <recent name="E:\PyCharmPythonProjects\PySparkCode\Dataframe" />
     </key>
   </component>
@@ -79,11 +120,84 @@
       <option name="project" value="LOCAL" />
       <updated>1745643588458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding Dataframe Exampes">
+      <option name="closed" value="true" />
+      <created>1745736979728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745736979728</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding  Handling Null COncepts">
+      <option name="closed" value="true" />
+      <created>1745907950380</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745907950380</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Select concepts">
+      <option name="closed" value="true" />
+      <created>1745908426155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745908426155</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Handling nested Json">
+      <option name="closed" value="true" />
+      <created>1747716695327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747716695327</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Sales data Analysis">
+      <option name="closed" value="true" />
+      <created>1748324258505</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748324258505</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Sales data Analysis">
+      <option name="closed" value="true" />
+      <created>1748324557592</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748324557592</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Basic Join example">
+      <option name="closed" value="true" />
+      <created>1750396265196</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750396265196</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Rdd and Df" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Rdd and Df" />
+    <MESSAGE value="Adding Dataframe Exampes" />
+    <MESSAGE value="Adding  Handling Null COncepts" />
+    <MESSAGE value="Select concepts" />
+    <MESSAGE value="Handling nested Json" />
+    <MESSAGE value="Sales data Analysis" />
+    <MESSAGE value="Basic Join example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Join example" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Dataframe/Window Function/Lead_lag.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

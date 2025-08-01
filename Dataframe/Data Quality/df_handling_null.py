@@ -110,7 +110,7 @@ df.agg(*null_percentages).show()
 
 print("\nRows with any null value:")
 # IMPORTANT: This creates a condition that checks if ANY column has a null
-any_null_condition = F.lit(False)
+any_null_condition = F.lit(True)
 for column_name in df.columns:
     any_null_condition = any_null_condition | F.col(column_name).isNull()
 
